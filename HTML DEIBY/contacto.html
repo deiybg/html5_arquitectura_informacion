@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Saludable</title>
+    <link rel="shortcut icon" href="assets/plato.ico" type="image/x-icon" />
+    <style>
+
+     header img{
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.6;
+        width: 100%;
+        height: auto;
+     }   
+     h1{
+        color: black;
+        text-align: center;
+     }
+     .container{
+        position: relative;
+     }
+     .texto-frente{
+        position: absolute;
+        top: 1%;
+        left: 10%;
+        right: 10%;
+        transform: translate(-50% -50%);
+        z-index: 1;
+        color: black;
+        text-align: center;
+     }
+     .formulario-posicionado{
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        color: black;
+        z-index: 1;
+     }
+     .texto-formulario{
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        right: 1%;
+        transform: translate(-50% -50%);
+        z-index: 1;
+        color: black;
+        text-align: left
+     }
+
+     .texto-comentario{
+        position: absolute;
+        top: 33%;
+        left: 5%;
+        color: black;
+        z-index: 1;
+     }
+     .genero{
+        font-weight: bold;
+     }
+     .boton-enviar{
+        position: absolute;
+        top: 43%;
+        left: 5%;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+
+        <div class="container">
+
+            <img src="assets/harvest-still-life-vegetables-fresh-wood-hd-wallpaper-preview.jpg" alt="Fondo de pantalla dew alimentos">
+            <h2 class="texto-frente">Rellene el siguiente formulario de contacto</h2>
+            <h3 class="texto-formulario">Dejanos tu consulta</h3>
+
+        </div>
+     
+    </header>
+
+    <div>
+        <form class="formulario-posicionado">
+            <input type="text" name="nombre" placeholder="Nombre completo">
+            <input type="email" name="correo" placeholder="Correo electrónico">
+            <input type="tel" placeholder="Teléfono">
+            <input type="radio" id="radio1" name="gender" value="male">
+            <label class="genero" for="radio1">Masculino</label>
+            <input type="radio" id="radio2" name="gender" value="female">
+            <label class="genero" for="radio2">Femenino</label>
+            
+
+    </div>
+
+    <div>
+        <textarea class="texto-comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí."></textarea>
+        <button class="boton-enviar" type="submit">Enviar</button>
+    </div>
+    
+    
+    
+</body>
+</html>
