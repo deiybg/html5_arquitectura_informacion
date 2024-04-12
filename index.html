@@ -9,8 +9,11 @@
       type="image/jpg"
     />
     <title>Comida Saludable</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
-    <link rel="stylesheet" href="styles.css"> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
     <style>
       header {
@@ -26,27 +29,35 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 30px;
         background-color: rgba(18, 239, 91, 0.162);
+        font-weight: 800;
       }
       body {
-        background-color: #000000;
+        background-color: #121111;
       }
-      h2 {
-        color: white;
-      }
+      h2,
       h3 {
         color: white;
+        text-align: center;
+        font-weight: 800;
+        font-size: 25px;
       }
+
       p {
         color: white;
+        word-spacing: 0.3em;
       }
+
       footer {
         color: white;
         text-align: center;
       }
       nav ul {
+        display: flex;
         list-style-type: none;
         padding: 0;
         margin: 0;
+        justify-content: center;
+        gap: 60px;
       }
       nav li {
         display: inline-block;
@@ -56,30 +67,43 @@
         text-decoration: none;
         color: white;
       }
-      .container {
-        display: flex;
-        align-items: justify;
-      }
-      .container img {
-        max-width: 50%;
-        float: left;
-        margin-right: 20px;
+
+      main > img {
+        margin-top: 40px;
+        width: 40vw;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
       }
 
+      main {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      main > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        width: 40vw;
+      }
+      .subtitulo-redes {
+        margin-top: 40px;
+      }
       .subtitulo-redes h2 {
         text-align: center;
+        
       }
       .redes-sociales a {
         font-size: 30px;
         margin: 0 10px;
         color: white;
-        
       }
 
       .redes-sociales {
         display: flex;
         justify-content: center;
-        
       }
     </style>
   </head>
@@ -104,11 +128,12 @@
       </ul>
     </nav>
 
-    <div class="container">
+    <main>
       <img
-        src="assets/como-cocinar-quinoa-perfecta.jpg"
+        src="./assets/como-cocinar-quinoa-perfecta.jpg"
         alt="Plato de Quinoa"
       />
+
       <article>
         <h2>¿Qué es la Quinoa? ¿Porqué se le considera un superalimento?</h2>
         <p>
@@ -144,21 +169,35 @@
           utilizarla en ensaladas (por ejemplo, nuestra receta de quinoa con
           algas y verduras, como masa de pizza o como ingrediente para
           croquetas, en tabulé, timbal de quinoa, rollitos de quinoa, y muchas
-          más recetas con quinoa que puedes encontrar en este blog. y formando
+          más recetas con quinoa que puedes encontrar en este blog). y formando
           parte de postres, como los bocaditos de quinoa y amaranto.
         </p>
       </article>
-    </div>
-    <div class="subtitulo-redes">
-      <h2>¡Siguenos en nuestras redes sociales</h2>
-    </div>
+    </main>
 
-    <div class="redes-sociales">
-      <a href="https://es-es.facebook.com/" class="fab fa-facebook-f"></a>
-      <a href="https://twitter.com/?lang=es" class="fab fa-twitter"></a>
-      <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F"
-        class="fab fa-instagram"></a>
-    </div>
+    <section class="subtitulo-redes">
+      <h2>¡Siguenos en nuestras redes sociales</h2>
+
+      <nav class="redes-sociales">
+        <ul>
+          <li>
+            <a href="https://es-es.facebook.com/" class="fab fa-facebook-f"></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F"
+              class="fab fa-instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F"
+              class="fab fa-instagram"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
     <footer>
       <p>
